@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="net_address">
+        
+        <item>http://</item>
+        <item>www.</item>
+        <item>http://www.</item>
+        <item>http://www.baidu.com</item>
+        
+    </string-array>
+</resources>

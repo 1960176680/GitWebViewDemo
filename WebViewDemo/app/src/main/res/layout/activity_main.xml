@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#b0e0e6"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="invisible"
+            android:background="@drawable/btn_home"
+            android:clickable="true" />
+
+        <AutoCompleteTextView
+            android:id="@+id/net_address"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_input_search"
+            android:hint="请输入网址浏览"
+            android:imeOptions="actionGo"
+            android:paddingLeft="10dp"
+            android:singleLine="true" 
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/start"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_search"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ProgressBar
+            android:id="@+id/mProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e6e6fa"
+            android:progressDrawable="@drawable/progress_bar_drawable"
+            android:visibility="gone" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:animateLayoutChanges="true" />
+
+</LinearLayout>
